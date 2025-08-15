@@ -1,0 +1,12 @@
+{
+  "steps": [
+    { "name": "browser_open", "arguments": { "headless": true } },
+    { "name": "page_goto", "arguments": { "url": "https://example.com", "waitUntil": "domcontentloaded" } },
+    { "name": "page_assert", "arguments": { "kind": "title_contains", "selector": "html", "text": "Example" } },
+    { "name": "page_screenshot", "arguments": { "fullPage": true } },
+    { "name": "browser_close" }
+  ],
+  "continueOnError": false
+}
+
+

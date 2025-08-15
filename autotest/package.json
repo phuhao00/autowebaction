@@ -1,0 +1,26 @@
+{
+  "name": "mcp-web-autotest",
+  "version": "0.1.0",
+  "description": "MCP 服务：基于 Playwright 的网页自动化测试工具集",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "playwright:install": "playwright install"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "playwright": "^1.46.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.5"
+  }
+}
+
+

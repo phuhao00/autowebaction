@@ -1,0 +1,26 @@
+{
+  "autoBrowser": true,
+  "headless": true,
+  "retries": 0,
+  "continueOnError": false,
+  "junit": true,
+  "junitPath": "D:/autotest/junit.xml",
+  "artifactsDir": "D:/autotest/artifacts",
+  "onFailureScreenshot": true,
+  "traceOnFailure": true,
+  "setup": [
+    { "name": "page_viewport", "arguments": { "width": 1366, "height": 768 } }
+  ],
+  "tests": [
+    {
+      "name": "Example loads",
+      "steps": [
+        { "name": "page_goto", "arguments": { "url": "https://example.com" } },
+        { "name": "page_assert", "arguments": { "kind": "visible", "selector": "h1" } }
+      ]
+    }
+  ],
+  "teardown": []
+}
+
+
